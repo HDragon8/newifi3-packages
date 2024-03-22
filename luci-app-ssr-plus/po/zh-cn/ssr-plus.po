@@ -79,6 +79,9 @@ msgstr "流控（Flow）"
 msgid "Transport"
 msgstr "传输协议"
 
+msgid "Transport Protocol"
+msgstr "传输协议"
+
 msgid "Protocol"
 msgstr "传输协议"
 
@@ -181,6 +184,9 @@ msgstr "注意： 如果服务器使用 userpass 验证，格式必须是 userna
 msgid "Enable Port Hopping"
 msgstr "启用端口跃迁"
 
+msgid "Enable Transport Protocol Settings"
+msgstr "启用传输协议设置"
+
 msgid "Port Range"
 msgstr "端口范围值"
 
@@ -258,8 +264,8 @@ msgstr "QUIC 流接收窗口"
 msgid "Lazy Start"
 msgstr "延迟启动"
 
-msgid "Disable Path MTU discovery"
-msgstr "禁用 MTU 探测"
+msgid "Disable QUIC path MTU discovery"
+msgstr "禁用 QUIC 启用 MTU 探测"
 
 msgid "Enable Tunnel(DNS)"
 msgstr "启用隧道（DNS）转发"
@@ -776,6 +782,12 @@ msgstr "所有端口（默认）"
 
 msgid "Only Common Ports"
 msgstr "仅常用端口（不走 P2P 流量到代理）"
+
+msgid "Custom Ports"
+msgstr "自定义端口"
+
+msgid "Enter Custom Ports"
+msgstr "输入自定义端口"
 
 msgid "Socket Connected"
 msgstr "连接测试"

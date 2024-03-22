@@ -91,6 +91,12 @@ msgstr "路由器本机代理"
 msgid "When selected, localhost can transparent proxy."
 msgstr "当勾选时，路由器本机可以透明代理。"
 
+msgid "Client Proxy"
+msgstr "客户端代理"
+
+msgid "When selected, devices in LAN can transparent proxy. Otherwise, it will not be proxy. But you can still use access control to allow the designated device to proxy."
+msgstr "当勾选时，局域网内的设备可以透明代理。否则，将不代理。但您仍然可以使用访问控制允许指定的设备代理。"
+
 msgid "Socks Config"
 msgstr "Socks配置"
 
@@ -160,8 +166,14 @@ msgstr "需要代理的分流规则域名使用 FakeDNS。"
 msgid "Domain Override"
 msgstr "域名重写"
 
-msgid "Clear IPSET"
-msgstr "清空 IPSET"
+msgid "Direct DNS result write to IPSet"
+msgstr "直连 DNS 解析结果写入到 IPSet"
+
+msgid "Perform the matching direct domain name rules into IP to IPSet/NFTSet, and then connect directly (not entering the core). Maybe conflict with some special circumstances."
+msgstr "将匹配到的直连规则的域名解析IP写入到 IPSet/NFTSet，然后直连（不进入内核）。可能和某些特殊情况冲突。"
+
+msgid "Clear IPSet"
+msgstr "清空 IPSet"
 
 msgid "Try this feature if the rule modification does not take effect."
 msgstr "如果修改规则后没有生效，请尝试此功能。"
@@ -406,6 +418,9 @@ msgstr "导入分享URL"
 msgid "Build Share URL"
 msgstr "导出分享URL"
 
+msgid "Generate QRCode"
+msgstr "生成二维码"
+
 msgid "Import Finished"
 msgstr "导入完成："
 
@@ -471,6 +486,12 @@ msgstr "认证密码"
 
 msgid "Commands the client to use the BBR flow control algorithm"
 msgstr "命令客户端使用 BBR 流量控制算法"
+
+msgid "PinSHA256"
+msgstr "PinSHA256"
+
+msgid "Certificate fingerprint"
+msgstr "证书指纹"
 
 msgid "Max upload Mbps"
 msgstr "最大上行(Mbps)"
@@ -832,12 +853,6 @@ msgstr "%s 程序路径"
 msgid "%s Client App Path"
 msgstr "%s 客户端程序路径"
 
-msgid "Trojan-Go Version API"
-msgstr "Trojan-Go 版本 API"
-
-msgid "alternate API URL for version checking"
-msgstr "用于版本检查的 API URL"
-
 msgid "Node Subscribe"
 msgstr "节点订阅"
 
@@ -1047,12 +1062,6 @@ msgstr "插件名称"
 
 msgid "Plugin Arguments"
 msgstr "插件参数"
-
-msgid "Brook Protocol"
-msgstr "Brook协议"
-
-msgid "Use TLS"
-msgstr "使用TLS"
 
 msgid "Naiveproxy Protocol"
 msgstr "Naiveproxy协议"
@@ -1446,3 +1455,39 @@ msgstr "后量子对等证书签名方案"
 
 msgid "Disable adaptive sizing of TLS records"
 msgstr "禁用 TLS 记录的自适应大小调整"
+
+msgid "Enable Multipath TCP, need to be enabled in both server and client configuration."
+msgstr "启用 Multipath TCP，需在服务端和客户端配置中同时启用。"
+
+msgid "Fragment"
+msgstr "分片"
+
+msgid "TCP fragments, which can deceive the censorship system in some cases, such as bypassing SNI blacklists."
+msgstr "TCP 分片，在某些情况下可以欺骗审查系统，比如绕过 SNI 黑名单。"
+
+msgid "Fragment Packets"
+msgstr "分片方式"
+
+msgid " \"1-3\" is for segmentation at TCP layer, applying to the beginning 1 to 3 data writes by the client. \"tlshello\" is for TLS client hello packet fragmentation."
+msgstr " \"1-3\" 是 TCP 的流切片，应用于客户端第 1 至第 3 次写数据。\"tlshello\" 是 TLS 握手包切片。"
+
+msgid "Fragment Length"
+msgstr "分片包长"
+
+msgid "Fragmented packet length (byte)"
+msgstr "分片包长 (byte)"
+
+msgid "Fragment Interval"
+msgstr "分片间隔"
+
+msgid "Fragmentation interval (ms)"
+msgstr "分片间隔（ms）"
+
+msgid "If is domain name, The requested domain name will be resolved to IP before connect."
+msgstr "如果是域名，域名将在请求发出之前解析为 IP。"
+
+msgid "Landing node"
+msgstr "落地节点"
+
+msgid "Only support a layer of proxy."
+msgstr "仅支持一层代理。"
